@@ -87,10 +87,9 @@ main {
   justify-content: space-between;
   align-items: flex-end;
   width: 960px;
-  height: 250px;
+  height: 242px;
   background-color: white;
   position: relative;
-  border: 1px solid blue;
   margin-top: 3rem;
 }
 
@@ -110,14 +109,32 @@ main {
 }
 
 .captionbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 960px;
-  height: 100px;
+  height: 40px;
   background-color: white;
   position: relative;
-  border: 1px solid green;
   margin: 0px 100px 3rem 100px;
 }
 
+.pencaption,
+.watchcaption,
+.glassescaption {
+  width: 170px;
+  height: 2rem;
+  padding: 0 2rem;
+  background-color: black;
+  border-bottom: 4px solid black;
+}
+
+.caption-p {
+  display: flex;
+  justify-content: center;
+  margin: 9px auto 9px auto;
+}
 
 .infobox {
   width: 960px;

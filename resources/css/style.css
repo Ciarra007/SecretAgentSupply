@@ -1,0 +1,92 @@
+html {
+  font-size: 18px;
+}
+
+header {
+  background-color: black;
+  width: 1160px;
+  position: fixed;
+  z-index: 1;
+  padding: .66rem 0px .66rem 0.5rem;
+}
+
+.logo {
+  border: 1px solid blue;
+  width: 960px;
+  margin-left: 100px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+}
+
+.logo p {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+body {
+  width: 1160px;
+  height: 728px;
+  background-color: black;
+  border: 1px solid white;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.headercontainer {
+  width: 1160px;
+  height: 25rem;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-size: cover;
+}
+
+.navcontainer {
+  width: 1160px;
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 960px;
+  padding: .75rem 0 .75rem 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 1160px;
+  height: 500px;
+  background-color: white;
+}
+
+.explodingpen,
+.cellularwatch,
+.thermalglasses {
+  display: inline-flex;
+  flex-direction: row;
+  width: 30%;
+  height: 15rem;
+  margin-top: 3rem;
+  border: 1px solid red;
+}
+
+.explodingpen p {
+  position: relative;
+  background-color: black;
+  justify-content: center;
+  padding: 0.5rem 0 0.5rem 0;
+}

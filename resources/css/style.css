@@ -1,13 +1,15 @@
 html {
   font-size: 18px;
+  overflow: scroll;
 }
 
 header {
   background-color: black;
-  width: 1160px;
+  width: 100%;
   position: fixed;
   z-index: 1;
   padding: .66rem 0px .66rem 0.5rem;
+  margin: 0 auto;
 }
 
 .logo {
@@ -37,6 +39,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .headercontainer {
@@ -58,6 +61,7 @@ body {
   margin-top: 9rem;
   margin-left: 100px;
   margin-right: 0;
+  position: relative;
 }
 
 .line1,
@@ -86,14 +90,16 @@ nav {
   position: relative;
 }
 
-.navbar {
+.navbar,
+.navbaralt-tab {
   display: inline-flex;
   justify-content: space-around;
   width: 960px;
   padding: .75rem 0 .75rem 0;
 }
 
-.navbar a {
+.navbar a,
+.navbaralt-tab a {
   color: white;
   text-decoration: none;
 }
@@ -109,59 +115,49 @@ main {
   margin: 0 auto;
 }
 
-.imagebox {
-  display: flex;
+.imagecolumns {
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
   width: 960px;
-  height: 242px;
-  background-color: white;
+  height: auto;
+  margin: 3rem 0;
   position: relative;
-  margin-top: 3rem;
 }
 
-.explodingpen,
-.cellularwatch,
-.thermalglasses {
+.imagecolumn1,
+.imagecolumn2,
+.imagecolumn3 {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  width: 30%;
+  height: 15rem;
+  position: relative;
+}
+
+.imagecolumn1 img,
+.imagecolumn2 img,
+.imagecolumn3 img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 9rem;
   height: 9rem;
-  padding: 2rem 2rem;
-  border: 4px solid black;
+  margin: 2rem auto;
+  position: relative;
 }
 
-.centerimg {
-  display: block;
-  margin: 0 auto;
-  width: 170px;
-}
-
-.captionbox {
+.imagecolumn1 p,
+.imagecolumn2 p,
+.imagecolumn3 p {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 960px;
-  height: 40px;
-  background-color: white;
-  position: relative;
-  margin: 0px 100px 3rem 100px;
-}
-
-.pencaption,
-.watchcaption,
-.glassescaption {
-  width: 170px;
-  height: 2rem;
-  padding: 0 2rem;
-  background-color: black;
-  border-bottom: 4px solid black;
-}
-
-.caption-p {
-  display: flex;
   justify-content: center;
-  margin: 9px auto 9px auto;
+  background-color: black;
+  width: 100%;
+  padding: .5rem 0;
+  position: relative;
 }
 
 .infobox {
